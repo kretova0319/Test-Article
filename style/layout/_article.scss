@@ -1,0 +1,407 @@
+main {
+  width: 992px;
+  margin: 0 auto;
+}
+section {
+  width: 992px;
+  margin-bottom: 48px;
+}
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+p {
+  padding-top: 20px;
+}
+.narrow {
+  width: 680px;
+}
+.bold,
+.boldy {
+  font-weight: bold;
+}
+.blue {
+  color: $blue;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 10px;
+}
+.line {
+  display: block;
+  width: 147px;
+  height: 13px;
+  border-top: 1px solid $grey;
+  margin: 0 90px;
+}
+.how {
+  & h3 {
+    padding-top: 64px;
+  }
+}
+.mainimg {
+  & p {
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 8px;
+  }
+}
+.list {
+  & p:first-child {
+    padding-top: 0;
+  }
+  & h4 {
+    padding-top: 20px;
+  }
+  &__wrap {
+    padding-left: 20px;
+    & li {
+      padding: 10px 0;
+    }
+  }
+}
+.advantages {
+  &__system {
+    display: flex;
+    gap: 38px;
+  }
+}
+.table {
+  border: 1px solid $grey;
+  &__wrap {
+    margin: 0 32px 20px 32px;
+  }
+  &__header {
+    display: flex;
+    gap: 16px;
+    & h4 {
+      margin-top: 30px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $grey;
+    padding: 6px 0 16px 0;
+    & a {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 26px;
+
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+}
+.practice {
+  &__wrap {
+    position: relative;
+    &_pic {
+      position: absolute;
+      right: 0px;
+      top: 25px;
+    }
+    &_text {
+      padding: 0;
+      width: 220px;
+    }
+  }
+}
+.quote {
+  border-left: 1px solid $darkgrey;
+
+  &__wrap {
+    margin: 0 32px 20px 32px;
+  }
+  & p:first-child {
+    padding-top: 0;
+  }
+}
+.author {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  & p {
+    padding: 0;
+    line-height: 20px;
+  }
+}
+.end {
+  & p:first-child {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  main {
+    width: 768px;
+  }
+  section {
+    width: 768px;
+    margin-bottom: 28px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+  p {
+    padding-top: 16px;
+  }
+  .narrow {
+    width: 608px;
+    margin: 0 auto;
+  }
+  .blue {
+    color: $blue;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 10px;
+  }
+  .bold {
+    font-weight: 400;
+  }
+  .boldy {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .how {
+    & h3 {
+      padding-top: 48px;
+    }
+  }
+  .mainimg img {
+    width: 100%;
+  }
+  .list {
+    & p:first-child {
+      padding-top: 0;
+    }
+    & h4 {
+      padding-top: 17px;
+    }
+    &__wrap {
+      padding-left: 20px;
+      & li {
+        padding: 7px 0;
+      }
+    }
+  }
+  .advantages {
+    width: 608px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    &__system {
+      // width: 608px;
+      display: block;
+      & p:last-child {
+        padding: 16px 200px 0 40px;
+      }
+    }
+  }
+  .table {
+    border: 1px solid $grey;
+    margin-bottom: 48px;
+    &__wrap {
+      margin: 0 32px 20px;
+    }
+    &__header {
+      display: flex;
+      gap: 16px;
+      & h4 {
+        margin-top: 30px;
+      }
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid $grey;
+      padding: 6px 0 16px 0;
+      & a {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $blue;
+        cursor: pointer;
+      }
+    }
+  }
+  .practice {
+    &__wrap {
+      display: block;
+      &_pic {
+        position: relative;
+        margin-left: 115px;
+        & img {
+          max-width: 190px;
+        }
+      }
+      &_text {
+        padding: 15px 0 20px 0;
+        width: 340px;
+      }
+    }
+  }
+  .quote {
+    &__wrap {
+      margin: 0 5px 20px 15px;
+    }
+  }
+  .author {
+    &__name {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  .end {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: $small-mobile) {
+  main {
+    width: 320px;
+  }
+  section {
+    width: 320px;
+    margin-bottom: 28px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  p {
+    padding-top: 16px;
+  }
+  .narrow {
+    width: 288px;
+  }
+  .blue {
+    color: $blue;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 8px;
+  }
+  .line {
+    width: 127px;
+    margin: -27px 36px;
+  }
+  .how {
+    & h3 {
+      padding-top: 48px;
+    }
+  }
+  .mainimg {
+    & p {
+      font-size: 15px;
+      line-height: 24px;
+      padding-top: 8px;
+    }
+  }
+  .list {
+    & p:first-child {
+      padding-top: 0;
+    }
+    & h4 {
+      font-size: 17px;
+      line-height: 26px;
+      padding-top: 16px;
+    }
+    &__wrap {
+      padding-left: 20px;
+      & li {
+        padding: 6px 0;
+      }
+    }
+  }
+  .advantages {
+    width: 288px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    &__system {
+      display: block;
+      & p:last-child {
+        padding: 16px 90px 0 25px;
+      }
+    }
+  }
+  .table {
+    &__wrap {
+      margin: 0 20px;
+    }
+    &__header {
+      width: 266px;
+      display: flex;
+      gap: 0px;
+      &_arrow {
+        display: inline;
+        overflow: hidden;
+        width: 100px;
+        & img {
+          position: relative;
+          left: 0px;
+          top: -10px;
+        }
+      }
+      & h4 {
+        font-size: 19px;
+        line-height: 28px;
+        margin-top: 20px;
+      }
+    }
+    &__contents {
+      & div:last-child,
+      div:nth-child(4) {
+        display: none;
+      }
+    }
+    &__content {
+      & img {
+        display: none;
+      }
+    }
+  }
+  .practice {
+    &__wrap {
+      display: block;
+      &_pic {
+        position: relative;
+        margin-left: 45px;
+        & img {
+          max-width: 169px;
+        }
+      }
+      &_text {
+        padding: 13px 22px 17px 0;
+        width: 169px;
+      }
+    }
+  }
+  .quote {
+    &__wrap {
+      margin: 0px 5px 20px 15px;
+    }
+    & p:first-child {
+      padding-top: 0;
+    }
+  }
+  .end {
+    & p:first-child {
+      padding-top: 0;
+    }
+  }
+}

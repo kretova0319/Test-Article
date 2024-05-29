@@ -1,0 +1,10 @@
+@import "fonts";
+@import "variables";
+
+@import "layout/basis.scss";
+@import "layout/article.scss";
+
+/*general styles*/
+body {
+  @extend %main-font;
+}

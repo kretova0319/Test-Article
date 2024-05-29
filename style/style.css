@@ -1,0 +1,464 @@
+@font-face {
+  font-family: "RR";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+body {
+  font-family: "RR", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  font-style: normal;
+  color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+main {
+  width: 992px;
+  margin: 0 auto;
+}
+
+section {
+  width: 992px;
+  margin-bottom: 48px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+p {
+  padding-top: 20px;
+}
+
+.narrow {
+  width: 680px;
+}
+
+.bold,
+.boldy {
+  font-weight: bold;
+}
+
+.blue {
+  color: #0068ff;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.line {
+  display: block;
+  width: 147px;
+  height: 13px;
+  border-top: 1px solid #cccccc;
+  margin: 0 90px;
+}
+
+.how h3 {
+  padding-top: 64px;
+}
+
+.mainimg p {
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 8px;
+}
+
+.list p:first-child {
+  padding-top: 0;
+}
+.list h4 {
+  padding-top: 20px;
+}
+.list__wrap {
+  padding-left: 20px;
+}
+.list__wrap li {
+  padding: 10px 0;
+}
+
+.advantages__system {
+  display: flex;
+  gap: 38px;
+}
+
+.table {
+  border: 1px solid #cccccc;
+}
+.table__wrap {
+  margin: 0 32px 20px 32px;
+}
+.table__header {
+  display: flex;
+  gap: 16px;
+}
+.table__header h4 {
+  margin-top: 30px;
+}
+.table__content {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #cccccc;
+  padding: 6px 0 16px 0;
+}
+.table__content a {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #0068ff;
+  cursor: pointer;
+}
+
+.practice__wrap {
+  position: relative;
+}
+.practice__wrap_pic {
+  position: absolute;
+  right: 0px;
+  top: 25px;
+}
+.practice__wrap_text {
+  padding: 0;
+  width: 220px;
+}
+
+.quote {
+  border-left: 1px solid #080808;
+}
+.quote__wrap {
+  margin: 0 32px 20px 32px;
+}
+.quote p:first-child {
+  padding-top: 0;
+}
+
+.author {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.author p {
+  padding: 0;
+  line-height: 20px;
+}
+
+.end p:first-child {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 768px;
+  }
+  section {
+    width: 768px;
+    margin-bottom: 28px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+  p {
+    padding-top: 16px;
+  }
+  .narrow {
+    width: 608px;
+    margin: 0 auto;
+  }
+  .blue {
+    color: #0068ff;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 10px;
+  }
+  .bold {
+    font-weight: 400;
+  }
+  .boldy {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .how h3 {
+    padding-top: 48px;
+  }
+  .mainimg img {
+    width: 100%;
+  }
+  .list p:first-child {
+    padding-top: 0;
+  }
+  .list h4 {
+    padding-top: 17px;
+  }
+  .list__wrap {
+    padding-left: 20px;
+  }
+  .list__wrap li {
+    padding: 7px 0;
+  }
+  .advantages {
+    width: 608px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+  .advantages__system {
+    display: block;
+  }
+  .advantages__system p:last-child {
+    padding: 16px 200px 0 40px;
+  }
+  .table {
+    border: 1px solid #cccccc;
+    margin-bottom: 48px;
+  }
+  .table__wrap {
+    margin: 0 32px 20px;
+  }
+  .table__header {
+    display: flex;
+    gap: 16px;
+  }
+  .table__header h4 {
+    margin-top: 30px;
+  }
+  .table__content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #cccccc;
+    padding: 6px 0 16px 0;
+  }
+  .table__content a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #0068ff;
+    cursor: pointer;
+  }
+  .practice__wrap {
+    display: block;
+  }
+  .practice__wrap_pic {
+    position: relative;
+    margin-left: 115px;
+  }
+  .practice__wrap_pic img {
+    max-width: 190px;
+  }
+  .practice__wrap_text {
+    padding: 15px 0 20px 0;
+    width: 340px;
+  }
+  .quote__wrap {
+    margin: 0 5px 20px 15px;
+  }
+  .author__name {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .end {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main {
+    width: 320px;
+  }
+  section {
+    width: 320px;
+    margin-bottom: 28px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  p {
+    padding-top: 16px;
+  }
+  .narrow {
+    width: 288px;
+  }
+  .blue {
+    color: #0068ff;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 8px;
+  }
+  .line {
+    width: 127px;
+    margin: -27px 36px;
+  }
+  .how h3 {
+    padding-top: 48px;
+  }
+  .mainimg p {
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 8px;
+  }
+  .list p:first-child {
+    padding-top: 0;
+  }
+  .list h4 {
+    font-size: 17px;
+    line-height: 26px;
+    padding-top: 16px;
+  }
+  .list__wrap {
+    padding-left: 20px;
+  }
+  .list__wrap li {
+    padding: 6px 0;
+  }
+  .advantages {
+    width: 288px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+  .advantages__system {
+    display: block;
+  }
+  .advantages__system p:last-child {
+    padding: 16px 90px 0 25px;
+  }
+  .table__wrap {
+    margin: 0 20px;
+  }
+  .table__header {
+    width: 266px;
+    display: flex;
+    gap: 0px;
+  }
+  .table__header_arrow {
+    display: inline;
+    overflow: hidden;
+    width: 100px;
+  }
+  .table__header_arrow img {
+    position: relative;
+    left: 0px;
+    top: -10px;
+  }
+  .table__header h4 {
+    font-size: 19px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+  .table__contents div:last-child,
+  .table__contents div:nth-child(4) {
+    display: none;
+  }
+  .table__content img {
+    display: none;
+  }
+  .practice__wrap {
+    display: block;
+  }
+  .practice__wrap_pic {
+    position: relative;
+    margin-left: 45px;
+  }
+  .practice__wrap_pic img {
+    max-width: 169px;
+  }
+  .practice__wrap_text {
+    padding: 13px 22px 17px 0;
+    width: 169px;
+  }
+  .quote__wrap {
+    margin: 0px 5px 20px 15px;
+  }
+  .quote p:first-child {
+    padding-top: 0;
+  }
+  .end p:first-child {
+    padding-top: 0;
+  }
+}
+/*general styles*//*# sourceMappingURL=style.css.map */

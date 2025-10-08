@@ -3,7 +3,7 @@
 A responsive article page created as a **test assignment**.  
 The task was to replicate a given article layout and visual design.
 
-This project demonstrates skills in typography, layout and faithful reproduction of a design mockup.
+This project demonstrates skills in typography, layout, responsive design, and faithful reproduction of a design mockup.
 
 ---
 
@@ -13,7 +13,8 @@ This project demonstrates skills in typography, layout and faithful reproduction
 
 ## 🧩 Features
 
-- Pixel-perfect layout matching the design mockup  
+- Pixel-perfect layout matching the design mockup
+- Responsive behavior for desktop, tablet, and mobile 
 - Semantic HTML structure (headings, paragraphs, lists)  
 - Styled typography and consistent spacing  
 - Smooth reading experience, with well-structured content
@@ -23,7 +24,7 @@ This project demonstrates skills in typography, layout and faithful reproduction
 ## 🛠 Tech Stack
 
 - **HTML5**
-- **CSS3 (Flexbox / Grid / Media Queries)**
+- **CSS3 (Flexbox / Media Queries)**
 - **Git & GitHub**
 
 ---
@@ -31,7 +32,7 @@ This project demonstrates skills in typography, layout and faithful reproduction
 ## 🚀 How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/Test-Article.git
+git clone https://github.com/kretova0319/Test-Article.git
 cd Test-Article
 open index.html
 
